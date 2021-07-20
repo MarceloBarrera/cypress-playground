@@ -29,6 +29,10 @@ Simple example Twitter client to demonstrate some core Cypress concepts as seen 
 npm run serve
 ```
 
+### Run back end in express assuming mongodb is already setup in the system environment
+```
+npm run start:server
+```
 ### Compiles and minifies for production
 ```
 npm run build

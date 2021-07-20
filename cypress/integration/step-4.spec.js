@@ -4,7 +4,7 @@ const userSeed = require('../../server/seed/users')
 
 context('User setup', () => {
   beforeEach(() => {
-    cy.task('clear:db')
+    // cy.task('clear:db')
     cy.task('seed:db', userSeed.data)
   })
 

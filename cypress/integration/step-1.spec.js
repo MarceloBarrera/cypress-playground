@@ -16,3 +16,6 @@ it('signup and login user', () => {
 
   cy.location('pathname').should('eq', '/board')
 })
+afterEach(() => {
+  cy.task('clear:db')
+})

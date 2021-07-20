@@ -2,10 +2,6 @@
 
 
 context('User setup', () => {
-  beforeEach(() => {
-    cy.task('clear:db')
-  })
-
   it('signup and login user', () => {
     cy.visit('http://localhost:8080/signup')
 
@@ -22,4 +18,7 @@ context('User setup', () => {
 
     cy.location('pathname').should('eq', '/board')
   })
+})
+afterEach(() => {
+  cy.task('clear:db')
 })
